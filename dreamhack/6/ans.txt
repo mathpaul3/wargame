@@ -1,0 +1,4 @@
+F12 > Application > Cookies > http://host3.dreamhack.games:PORT > 쿠키 생성
+{ 'username': 'admin' }
+
+DH{7952074b69ee388ab45432737f9b0c56}
