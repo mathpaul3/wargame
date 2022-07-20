@@ -1,0 +1,3 @@
+IDA 사용하여 decompile > strcmp하는 부분 확인 > Flag 취득
+
+DH{Comp4re_the_arr4y}
