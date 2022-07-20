@@ -1,0 +1,16 @@
+# problem file
+*.zip
+
+# packages
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# files related to IDA
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
