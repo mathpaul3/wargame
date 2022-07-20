@@ -1,0 +1,3 @@
+IDA 사용하여 decompile > strcmp하는 부분 확인 > 커서를 숫자에 놓고 'r' 눌러 hex를 char로 변환 > Flag 취득
+
+DH{Compar3_the_ch4ract3r}
