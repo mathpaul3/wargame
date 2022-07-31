@@ -1,0 +1,5 @@
+insomnia(API 클라이언트)를 켜서 
+http://host3.dreamhack.games:PORT/get_info 에
+Form URL encoded 형태로
+userid=../flag 를 담아
+POST request를 날린다
