@@ -1,4 +1,3 @@
-from math import pow
 from typing import Literal, Union
 
 
@@ -154,31 +153,6 @@ class RSA:
         if not isinstance(self.N, int) or not isinstance(self.d, int):
             return
         return pow(c, self.d, self.N)
-
-    def CCA(
-        self,
-        decrypted_multiplied_c: int = None,
-        decrypted_multiplication: int = None,
-    ):
-        # CCA(Chosen Ciphertext Attack)
-        ## use this method when knowing c, N and you can decrypt specific c
-        if not isinstance(self.N, int):
-            return
-
-        # 1. get 2m = 2c^d mod N = 2m^ed mod N
-        if not isinstance(decrypted_multiplied_c, int):
-            # decrypted_multiplied_c = self.decrypt((self.c * multiple) % self.N)
-            return
-
-        # 2. get modular inverse of 2^d mod N
-        if not isinstance(decrypted_multiplication, int):
-            # decrypted_multiplication = self.decrypt(multiple)
-            return
-
-        modinv_decrypted_multiplication = pow(decrypted_multiplication, -1, self.N)
-
-        # 3. (2c / 2)^d mod N = (2c^d mod N * mod^-1(2) mod N) mod N = c^d mod N
-        self.set_m((decrypted_multiplied_c * modinv_decrypted_multiplication) % self.N)
 
     @staticmethod
     def _message_to_number(m: bytes | str) -> int:
