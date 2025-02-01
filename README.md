@@ -41,5 +41,6 @@ pip install -r requirements.txt
 - Export Dependencies to requirements.txt
 
 ```bash
-pip freeze | grep -v "^-e" > requirements.txt # Exclude custom module
+# Exclude custom module
+pip freeze | grep -v "^-e" > requirements.txt
 ```
