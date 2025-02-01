@@ -35,11 +35,11 @@ pip install -e .
 - Install Dependencies in requirements.txt
 
 ```bash
-pip install -r $(FILENAME)
+pip install -r requirements.txt
 ```
 
 - Export Dependencies to requirements.txt
 
 ```bash
-pip freeze > $(FILENAME)
+pip freeze | grep -v "^-e" > requirements.txt # Exclude custom module
 ```
